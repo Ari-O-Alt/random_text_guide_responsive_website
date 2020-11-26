@@ -1,0 +1,302 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95rem;
+	margin-bottom: 1.8rem;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3,
+h4 {
+	margin-top: 0;
+}
+
+h4 {
+	margin-bottom: .4rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/* ------------------------------- Header navigation -------------------------------- */
+.name {
+	font-size: 1.25rem;
+	padding-left: 2rem;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.main-nav a {
+	font-size: .95rem;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+ .main-nav li:last-child {
+ 	
+ 	margin-bottom: .5rem;
+ }
+
+.main-header {
+	text-align: center;
+	
+}
+
+/* ---------------------------------- Banner --------------------------------------- */
+.banner {
+	color: #fff;
+	background: #3acec2;
+	text-align: center;
+	padding: 3rem;
+}
+
+.logo {
+	margin-top: 3rem;
+	width: 150px;
+}
+
+/* ------------------------------------ Main content -------------------------------- */
+
+.col {
+	width: 100%;
+	padding: 0 3rem;
+	margin: auto;
+
+}
+
+.secondary {
+	
+	padding-top: 1rem;
+}
+
+
+.parent {
+	margin: auto;
+}
+
+figure {
+	position: relative;
+	margin: 0;
+	line-height: 0;
+}
+
+figcaption {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+	padding: 1em;	
+	background: rgba(19,43,102, .85);
+}
+
+.icon-location {
+	width: 2.9rem;
+	height: 2.9rem;
+	position: absolute;
+	top: -1.45rem;
+	right: -1.45rem;
+}
+/* ---------------------------------- Footer --------------------------------------- */
+
+.main-footer {
+	text-align: center;
+	background: #d9e4ea;
+	padding: 2em 0;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 450px) and (max-width: 768px) {
+	
+	/*.feat-img {
+		width: 11rem;
+		float: left;
+		margin: .5rem .5rem 0 0;
+		padding: .5rem .5rem;
+		border: 1px solid lightgray;
+	}*/
+}
+
+
+@media (min-width: 769px) and (max-width: 899px){
+
+.parent {
+	width: 90%;
+	margin: auto;
+}
+
+.main-header {
+	position: fixed;
+	text-align: center;
+	background: white;
+	top: 0;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+	width: 100%;
+	z-index: 10;
+}
+
+
+.main-header h1,
+.main-header ul {
+	display: inline-block;
+}
+
+.main-header ul li {
+	display: inline-block;
+	margin-left: 1rem;
+	
+}
+
+.main-header h1 {
+	float: left;
+	
+}
+
+.main-header ul {
+	float: right;
+	margin-top: 18.4px;
+}
+
+/*.feat-img {
+		width: 60%;
+		float: left;
+		margin: .5rem .5rem 0 0;
+		padding: .5rem .5rem;
+		border: 1px solid lightgray;
+	}*/
+
+.primary {
+	margin-left: 0;
+	width: 50%;
+	float: right;
+	padding: 1rem 2rem 0 1rem;
+}
+
+.secondary {
+	width: 50%;
+	float: left;
+	padding: 1rem 0 0 2rem;
+}
+
+.tertiary {
+	clear: both;
+	padding: 0 2rem;
+}
+
+.tertiary p {
+	margin-bottom: 1rem;
+}
+
+
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+
+}
+
+@media (min-width: 900px) {
+
+.parent {
+	width: 90%;
+	max-width: 1125px;
+}
+
+
+.main-header {
+	position: fixed;
+	background: white;
+	top: 0;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+	width: 100%;
+	z-index: 10;
+}
+
+.name {
+	padding-left: 0;
+}
+
+.main-header h1,
+.main-header ul {
+	display: inline-block;
+}
+
+.main-header ul li {
+	display: inline-block;
+	margin-right: .7rem;
+}
+
+.main-header h1 {
+	float: left;
+	margin-left: .7rem;
+}
+
+.tagline {
+	
+	font-size: 1.3rem;
+}
+
+.main-header ul {
+	float: right;
+	margin-top: 18.4px;
+}
+
+
+.primary {
+	padding: 1rem 1rem;
+	width: 40%;
+	float: left;
+}
+
+.secondary,
+.tertiary {
+	padding: 1rem 1rem;
+	width: 30%;
+	float: left;
+}
+
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+
+}
