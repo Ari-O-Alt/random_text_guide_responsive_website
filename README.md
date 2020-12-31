@@ -1,2 +1,2 @@
 ### Best city guide website
-#### Landing page created using HTML and CSS.
+#### Landing page created using HTML and CSS
